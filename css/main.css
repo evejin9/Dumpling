@@ -1,4 +1,22 @@
 /* 공통 스타일 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  height: 3000px;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .btn a {
   background-color: #5A80C9;
   padding: 5px 10px;
@@ -6,22 +24,65 @@
   margin: 5px;
 }
 
+
 /* 헤더 */
 header {
   width: 100%;
-  height: 100px;
   background-color: bisque;
+  position: fixed;
+  top: 0;
+}
+header .inner {
+  height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
+header .logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+header .logo a {
+  color: #4c6eac;
+}
 
-header .main-menu ul {
+header .main-menu .main-title {
   display: flex;
 }
-header .main-menu ul li {
-  padding: 10px 20px;
-  margin: 5px;
-  /* background-color: aqua; */
+header .main-menu .main-title li {
+  position: relative;
 }
-
+header .main-menu .main-title > li > a {
+  font-size: 14px;
+  display: block;
+  padding: 15px 20px;
+  margin: 0 20px;
+  /* background-color: cadetblue; */
+}
+header .main-menu .main-title li ul {
+  width: 100px;
+  background-color: #fff;
+  position: absolute;
+  left: 5px;
+  padding: 20px 0;
+  display: none;
+}
+header .main-menu .main-title > li:hover > a {
+  color: #4c6eac;
+}
+header .main-menu .main-title > li:hover > ul {
+  display: block;
+}
+header .main-menu .main-title li ul li {
+  text-align: center;
+}
+header .main-menu .main-title li ul li + li {
+  padding-top: 20px;
+}
+header .main-menu .main-title li ul li a {
+  font-size: 12px;
+  font-weight: 600;
+}
+header .main-menu .main-title li ul li:hover a {
+  color: #4c6eac;
+}
