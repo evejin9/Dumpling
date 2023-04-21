@@ -27,6 +27,11 @@ a {
   margin: 5px;
 }
 
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
 .copyright h2 {
   font-size: 45px;
   font-weight: 700;
@@ -135,11 +140,6 @@ header .main-menu .main-title li ul li:hover a {
   justify-content: space-around;
   align-items: center;
 }
-.youtube-share  .youtube-area {
-  width: 640px;
-  height: 480px;
-  background-color: #000;
-}
 .youtube-share .share .copyright {
   top: 0;
   bottom: 0;
@@ -151,4 +151,46 @@ header .main-menu .main-title li ul li:hover a {
   position: absolute;
   right: 115px;
   bottom: -70px;
+}
+
+/* new & map */
+.new-map .inner {
+  height: 480px;
+  background-color: #F3F7FF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.new-map .new {
+  background-color: bisque;
+}
+.new-map .new .swiper {
+  width: 550px;
+}
+.new-map .new .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.new-map .new .swiper .swiper-wrapper .swiper-slide img {
+  width: 250px;
+}
+
+.new-map .map > div {
+  display: flex;
+}
+
+.new-map .map div .copyright {
+  position: relative;
+  margin-right: 20px;
+}
+.new-map .map div .copyright p {
+  text-align: center;
+}
+.new-map .map div .copyright .btn {
+  position: absolute;
+}
+
+.new-map .map div img {
+  width: 250px;
 }

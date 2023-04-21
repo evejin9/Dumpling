@@ -4,15 +4,14 @@ tag.src = "https://www.youtube.com/iframe_api";
 let firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+let player;
 function onYouTubeIframeAPIReady() {
   new YT.Player('player', {
-    height: '360',
-    width: '640',
     videoId: 'PXXkK1aVxrU',
     playerVars : {
       autoplay: true,
       loop: true,
-      Playlist: 'PXXkK1aVxrU',
+      playlist: 'PXXkK1aVxrU',
     },
     events: {
       onReady: function (event) {
