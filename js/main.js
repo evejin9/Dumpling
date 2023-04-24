@@ -1,3 +1,5 @@
+
+// 메인 1 애니메이션 효과 
 const fadeEls = document.querySelectorAll('.dumpling .fade-in')
 
 fadeEls.forEach( function (fadeEls, index) {
@@ -7,6 +9,7 @@ fadeEls.forEach( function (fadeEls, index) {
   })
 });
 
+// 메인 3 슬라이드
 new Swiper('.new-map .swiper', {
   direction: 'horizontal',
   loop: true,
@@ -21,6 +24,7 @@ new Swiper('.new-map .swiper', {
   }
 });
 
+// 메인 4 슬라이드 
 new Swiper('.best-product .swiper', {
   direction: 'horizontal',
   loop: true,
@@ -34,3 +38,24 @@ new Swiper('.best-product .swiper', {
     prevEl: '.swiper-button-prev',
   }
 });
+
+const toTopEl = document.querySelector('#to-top');
+toTopEl.addEventListener('click', function () {
+  gsap.to(window, 0.3, {
+    scrollTo: 0
+  });
+});
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 500) {
+    gsap.to(toTopEl, 0.6, {
+      opacity: 1, 
+      x: 0
+  });
+  } else {
+    gsap.to(toTopEl, 0.6, {
+      opacity: 0, 
+      x: 100
+    });
+  }
+})

@@ -398,6 +398,33 @@ footer .copyright span {
 }
 
 /* to-top 버튼 */
-.to-top {
-  width: 1000px;
+#to-top {
+  width: 40px;
+  height: 40px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #5A80C9;
+  border: 3px solid #5A80C9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
 }
+#to-top:hover {
+  background-color: #5A80C9;
+  color: #fff;
+  border: 3px solid #fff;
+}
+#to-top span{
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1062px) {
+  .header .inner {
+    flex-direction: column;
+  }
+};
