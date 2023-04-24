@@ -155,14 +155,21 @@ header .main-menu .main-title li ul li:hover a {
 
 /* new & map */
 .new-map .inner {
-  height: 480px;
+  height: 450px;
   background-color: #F3F7FF;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .new-map .new {
-  background-color: bisque;
+  /* background-color: bisque; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.new-map .new h3 {
+  margin-bottom: 103px;
 }
 .new-map .new .swiper {
   width: 550px;
@@ -174,23 +181,140 @@ header .main-menu .main-title li ul li:hover a {
 }
 .new-map .new .swiper .swiper-wrapper .swiper-slide img {
   width: 250px;
+  height: 188px;
 }
-
-.new-map .map > div {
-  display: flex;
+.new-map .new .swiper .swiper-wrapper .swiper-slide span {
+  font-size: 20px;
+  font-weight: 400;
 }
-
-.new-map .map div .copyright {
-  position: relative;
-  margin-right: 20px;
-}
-.new-map .map div .copyright p {
-  text-align: center;
-}
-.new-map .map div .copyright .btn {
+.new-map .new .swiper .swiper-button-prev,
+.new-map .new .swiper .swiper-button-next {
+  width: 25px;
+  height: 210px;
+  /* border: 2px solid #000; */
   position: absolute;
+  top: 22px;
+  color: #000;
+}
+.new-map .new .swiper .swiper-button-prev {
+  left: -12px;
+  margin-left: 4px;
+}
+.new-map .new .swiper .swiper-button-next {
+  right: -12px;
+  margin-right: 4px;
+}
+.new-map .new .swiper .swiper-button-prev:hover,
+.new-map .new .swiper .swiper-button-next:hover {
+  color: #5A80C9;
+}
+.new-map .new .swiper .swiper-button-prev::after,
+.new-map .new .swiper .swiper-button-next::after {
+  display: none;
+}
+.new-map .new .swiper .swiper-button-prev span,
+.new-map .new .swiper .swiper-button-next span {
+  font-size: 30px;
+}
+.new-map .map h3 {
+  margin-bottom: 70px;
+}
+.new-map .map > .map-group {
+  display: flex;
+  justify-content: center;
+}
+.new-map .map .map-group .copyright {
+  position: relative;
+  margin-right: 35px;
+}
+.new-map .map .map-group .copyright p {
+  text-align: center;
+  padding-top: 32px;
+}
+.new-map .map .map-group .copyright .btn {
+  position: absolute;
+  width: 101px;
+  height: 24px;
+  bottom: 22px;
+  right: -19px;
+}
+.new-map .map .map-group img {
+  width: 300px;
+  height: 230px;
 }
 
-.new-map .map div img {
+/* best & product review */
+.best-product .inner {
+  height: 450px;
+  display: flex;
+  background-color: azure;
+  justify-content: space-around;
+  align-items: center;
+}
+.best-product .best {
+  /* background-color: bisque; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.best-product .best h3 {
+  margin: 10px 0 103px;
+}
+.best-product .best .swiper {
+  width: 550px;
+}
+.best-product .best .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.best-product .best .swiper .swiper-wrapper .swiper-slide img {
   width: 250px;
+  height: 188px;
+}
+.best-product .best .swiper .swiper-wrapper .swiper-slide span {
+  font-size: 20px;
+  font-weight: 400;
+}
+.best-product .best .swiper .swiper-button-prev,
+.best-product .best .swiper .swiper-button-next {
+  width: 25px;
+  height: 210px;
+  /* border: 2px solid #000; */
+  position: absolute;
+  top: 22px;
+  color: #000;
+}
+.best-product .best .swiper .swiper-button-prev {
+  left: -12px;
+  margin-left: 4px;
+}
+.best-product .best .swiper .swiper-button-next {
+  right: -12px;
+  margin-right: 4px;
+}
+.best-product .best .swiper .swiper-button-prev:hover,
+.best-product .best .swiper .swiper-button-next:hover {
+  color: #5A80C9;
+}
+.best-product .best .swiper .swiper-button-prev::after,
+.best-product .best .swiper .swiper-button-next::after {
+  display: none;
+}
+.best-product .best .swiper .swiper-button-prev span,
+.best-product .best .swiper .swiper-button-next span {
+  font-size: 30px;
+}
+
+.best-product .product-review h3 {
+  margin: 10px 0 70px;
+}
+
+.best-product .product-review .product-list {
+  margin-left: 10px;
+}
+.best-product .product-review .product-list li {
+  line-height: 2.5;
+  
 }

@@ -4,8 +4,22 @@ new Swiper('.new-map .swiper', {
   autoplay: {
     delay: 6000
   },
-  slidePerview: 2,
-  spaceBetween: 10,
+  slidesPerView: 2,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
+new Swiper('.best-product .swiper', {
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 6000
+  },
+  slidesPerView: 2,
+  spaceBetween: 0,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
