@@ -16,9 +16,13 @@
   
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
   <link rel="stylesheet" href="./css/main.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
@@ -73,9 +77,9 @@
   <section class="dumpling">
     <div class="inner">
       <div class="copyright">
-        <h2>만두, 어디까지</h2>
-        <h2>먹어봤니?</h2>
-        <p> 
+        <h2 class="fade-in">만두, 어디까지</h2>
+        <h2 class="fade-in">먹어봤니?</h2>
+        <p class="fade-in"> 
           만두를 사랑하는 당신을 위해 준비한 
           <br> 
           만두 도장깨기 서비스
@@ -198,6 +202,41 @@
 
   <!-- 푸터 -->
   <footer>
+    <div class="inner">
+      <div class="logo">
+        <h2>좋아할 만두</h2>
+      </div>
+      <div class="bottom-menu">
+        <ul>
+          <li>회사 소개</li>
+          <li>서비스 소개</li>
+          <li>개인정보처리방침</li>
+          <li>이용약관</li>
+          <li>공지사항</li>
+        </ul>
+      </div>
+      <div class="sns">
+        <a href="javascript:void(0)"><img src="./image/sns-1.png" alt="instagram"></a>
+        <a href="javascript:void(0)"><img src="./image/sns-2.png" alt="facebook"></a>
+        <a href="javascript:void(0)"><img src="./image/sns-3.png" alt="twitter"></a>
+      </div>
+      <div class="info">
+        <ul>
+          <li>좋아할 만두(주)</li>
+          <li>대표자 김수진</li>
+          <li>인천 남동구 독곡로48번길 9, 6층 (서해빌딩)</li>
+          <li>Tel: 1577-0510</li>
+          <li>Email: evejin9@naver.com</li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <span>© 2023 Dumpling, I Like It. All Rights Reserved.</span>
+      </div>
+    </div>
   </footer>
+  
+  <div class="to-top">
+    <span class="material-icons">keyboard_arrow_up</span>
+  </div>
 </body>
 </html>
