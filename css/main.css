@@ -272,10 +272,9 @@ header .m-menu ul li {
   align-items: center;
   cursor: pointer;
 }
-.new-map .new .swiper .swiper-wrapper .swiper-slide:hover span {
+.new-map .new .swiper .swiper-wrapper .swiper-slide:hover .title {
   color: #5A80C9;
 }
-
 .new-map .new .swiper .swiper-wrapper .swiper-slide img {
   width: 250px;
   height: 188px;
@@ -433,8 +432,10 @@ margin-bottom: 95px;
 }
 
 /* footer */
-footer .inner {
+footer {
   background-color: #F3F7FF;
+}
+footer .inner {
   height: 280px;
   display: flex;
   flex-direction: column;

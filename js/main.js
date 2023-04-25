@@ -39,6 +39,17 @@ new Swiper('.best-product .swiper', {
   }
 });
 
+const favEls = document.querySelectorAll('.favorite');
+// const heartIcons = favEls.querySelectorAll('.material-icons')
+
+favEls.forEach(function (favEl, index) {
+  favEl.addEventListener('click', function () {
+    // heartIcons.textContent = 'favorite'
+    
+  })
+})
+
+
 const toTopEl = document.querySelector('#to-top');
 toTopEl.addEventListener('click', function () {
   gsap.to(window, 0.3, {
