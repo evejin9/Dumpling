@@ -213,6 +213,10 @@ header .m-menu ul li {
   justify-content: space-around;
   align-items: center;
 }
+.youtube-shere .youtube__area #player {
+  width: 640px;
+  height: 360px;
+}
 .youtube-share .share .copyright {
   top: 0;
   bottom: 0;
@@ -499,8 +503,9 @@ footer .copyright span {
 header .btn-hamburger {
   display: block;
   }
+
 .dumpling .inner {
-  height: 1000px;
+  height: 980px;
   flex-wrap: wrap;
   justify-content: center;
   }
@@ -512,12 +517,29 @@ header .btn-hamburger {
 }
 
 .youtube-share .inner {
-  height: 500px;
+  height: 1000px;
+  /* flex-direction: column-reverse; */
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 .youtube-share .youtube-area {
-  
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
+.youtube-share .youtube-area #player {
+  margin-top: 20px;
+  width: 960px;
+  height: 540px;
+}
+.youtube-share .share {
+  height: 290px;
+}
+.youtube-share .share .copyright .btn {
+  bottom: -80px;
+  right: 104px;
+}
+
 
 };
