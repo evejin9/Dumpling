@@ -53,6 +53,21 @@ h3 {
   padding-top: 30px;
 }
 
+.back-to-position {
+  opacity: 0;
+  transition: 1s;
+}
+.back-to-position.to-up {
+  transform: translateY(150px);
+}
+.back-to-position.to-down {
+  transform: translateY(-150px);
+}
+.show .back-to-position {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* 헤더 */
 header {
   width: 100%;
@@ -321,6 +336,7 @@ header .m-menu ul li {
   height: 24px;
   bottom: 22px;
   right: -19px;
+  transition: 1s;
 }
 .new-map .map .map-group img {
   width: 300px;
@@ -460,7 +476,7 @@ footer .info ul {
 footer .info ul li + li {
   padding-left: 30px; 
 }
-footer .copyright span {
+footer .copyright p {
   margin: 10px 0 10px;
 }
 

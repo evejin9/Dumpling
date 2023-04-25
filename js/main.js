@@ -1,6 +1,6 @@
 
 // 메인 1 애니메이션 효과 
-const fadeEls = document.querySelectorAll('.dumpling .fade-in')
+const fadeEls = document.querySelectorAll('.dumpling .fade-in');
 
 fadeEls.forEach( function (fadeEls, index) {
   gsap.to(fadeEls, 1, {
@@ -60,6 +60,10 @@ window.addEventListener('scroll', function () {
   }
 })
 
+// 인포 연도 표시
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();
+
 // 반응형 모바일 메뉴
 const btnHamburger = document.querySelector('header .btn-hamburger');
 const mMenu = document.querySelector('header .m-menu');
@@ -67,8 +71,17 @@ const btnClose = document.querySelector('header .btn-close')
 
 btnHamburger.addEventListener('click', function () {
   mMenu.classList.add('active');
-} );
+});
 
 btnClose.addEventListener('click', function () {
   mMenu.classList.remove('active');
-})
+});
+
+const spyEl = document.querySelector('section.scroll-spy');
+new ScrollMagic
+  .Scene({
+    triggerElement: spyEl,
+    triggerHook: 0.8
+  })
+  .setClassToggle(spyEl, 'show')
+  .addTo(new ScrollMagic.Controller());
