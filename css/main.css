@@ -21,6 +21,7 @@ a {
 .btn {
   background-color: #5A80C9;
   color: #fff;
+  border: 3px solid #fff;
   font-size: 15px;
   padding: 15px 30px;
   border-radius: 25px;
@@ -114,6 +115,68 @@ header .main-menu .main-title li ul li a {
 }
 header .main-menu .main-title li ul li:hover a {
   color: #4c6eac;
+}
+
+/* 모바일용 메뉴 */
+header .btn-hamburger {
+  color: #5A80C9;
+  display: none;
+  position: absolute;
+  right: 0;
+}
+header .btn-hamburger span {
+  font-size: 30px;
+}
+header .m-menu {
+  background-color: #c2d6fc;
+  height: 100vh;
+  padding: 80px 10px 0;
+  position: fixed;
+  top: 0;
+  right: -50%;
+  display: none;
+  transition: .5s;
+}
+header .m-menu.active {
+  display: block;
+  right: 0;
+}
+header .btn-close span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+header .btn-close span:hover {
+  color: #fff;
+}
+header .m-menu .m-btn-header .btn {
+  background-color: #5A80C9;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 10px 30px;
+  margin: 10px;
+}
+header .m-menu .m-btn-header .btn:hover {
+  background-color: #fff;
+  color: #5A80C9;
+  border: 3px solid #5A80C9;
+}
+
+header .m-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+header .m-menu ul li {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2.5;
+}
+  header .m-menu ul li:hover a {
+  color: #fff;
 }
 
 /* dumpling */
@@ -423,8 +486,38 @@ footer .copyright span {
   font-size: 30px;
 }
 
-@media screen and (max-width: 1062px) {
-  .header .inner {
-    flex-direction: column;
+@media screen and (max-width: 1060px) {
+  header .inner {
+    justify-content: space-around;
   }
+  header .main-menu {
+    display: none;
+  }
+  header .btn-header {
+    display: none;
+  }
+header .btn-hamburger {
+  display: block;
+  }
+.dumpling .inner {
+  height: 1000px;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+.dumpling .inner .copyright {
+  padding-top: 30px;
+}
+.dumpling .inner img {
+  width: 800px;
+}
+
+.youtube-share .inner {
+  height: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.youtube-share .youtube-area {
+  
+}
+
 };

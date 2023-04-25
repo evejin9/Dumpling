@@ -59,3 +59,16 @@ window.addEventListener('scroll', function () {
     });
   }
 })
+
+// 반응형 모바일 메뉴
+const btnHamburger = document.querySelector('header .btn-hamburger');
+const mMenu = document.querySelector('header .m-menu');
+const btnClose = document.querySelector('header .btn-close')
+
+btnHamburger.addEventListener('click', function () {
+  mMenu.classList.add('active');
+} );
+
+btnClose.addEventListener('click', function () {
+  mMenu.classList.remove('active');
+})
