@@ -79,7 +79,7 @@ header {
   background-color: #fff;
   position: fixed;
   top: 0;
-  z-index: 9;
+  z-index: 11;
 }
 header .inner {
   height: 100px;
@@ -222,6 +222,57 @@ header .m-menu ul li {
 .dumpling img {
   width: 650px;
   height: 480px;
+}
+
+/* search */
+
+.search-view .inner {
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.search-view .inner::before {
+  content: "";
+  background-image: url("../image/search-view_bg.jpg");
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.search-view .copyright h2 {
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.2) 10px 7px 10px;
+}
+.search-view .copyright p {
+  font-weight: 500;
+}
+.search-view label {
+  margin-top: 50px;
+}
+.search-view label {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.search-view label .material-icons {
+  font-size: 25px;
+  color: #5A80C9;
+  position: absolute;
+  left: 20px;
+}
+.search-view label #search-dumpling {
+  width: 600px;
+  height: 40px;
+  border-radius: 20px;
+  border: 3px solid #5A80C9;
+  padding: 0 60px;
+  box-sizing: border-box;
 }
 
 /* youtube-share */
@@ -501,6 +552,7 @@ footer .copyright p {
   bottom: 30px;
   right: 30px;
   cursor: pointer;
+  z-index: 9;
 }
 #to-top:hover {
   background-color: #5A80C9;
@@ -525,6 +577,7 @@ footer .copyright p {
   bottom: 190px;
   right: 30px;
   cursor: pointer;
+  z-index: 9;
 }
 #favorite-icon:hover {
   background-color: #fff;
@@ -537,7 +590,7 @@ footer .copyright p {
   display: none;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 12;
 }
 .favorite-view.active {
   display: block;
@@ -734,5 +787,10 @@ footer .copyright p {
   .best-product .product-review .product-list li {
     font-size: 20px;
     line-height: 2.8;
+  }
+
+  .favorite-view .favorite-bg {
+    width: 650px;
+    height: 750px;
   }
 }
