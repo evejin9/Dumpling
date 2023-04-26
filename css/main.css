@@ -262,17 +262,22 @@ header .m-menu ul li {
 }
 .search-view label .material-icons {
   font-size: 25px;
-  color: #5A80C9;
+  color: #686767;
   position: absolute;
   left: 20px;
 }
 .search-view label #search-dumpling {
   width: 600px;
   height: 40px;
+  font-size: 16px;
   border-radius: 20px;
-  border: 3px solid #5A80C9;
+  border: 3px solid #535252;
+  outline: none;
   padding: 0 60px;
   box-sizing: border-box;
+}
+.search-view label #search-dumpling:focus {
+  border-color: #4c6eac;
 }
 
 /* youtube-share */
@@ -486,6 +491,50 @@ margin-bottom: 95px;
   cursor: pointer;
 }
 
+/* delivery */
+
+.delivery .inner {
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.delivery .inner::before {
+  content: "";
+  background-image: url("../image/delivery-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.delivery .copyright {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.delivery .copyright h2 {
+  text-shadow: rgba(0, 0, 0, 0.2) 10px 7px 10px;
+}
+.delivery .copyright p {
+  font-weight: 600;
+}
+  .delivery .delivery-service a img {
+  width: 100px;
+  margin: 10px;
+}
+.delivery .delivery-service a img:first-child {
+  border-radius: 10px;
+}
+.delivery .delivery-service a:hover img {
+  transform: scale(1.2);
+}
+
 /* footer */
 footer {
   background-color: #F3F7FF;
@@ -598,6 +647,7 @@ footer .copyright p {
 .favorite-view .favorite-bg {
   background-color: #fff;
   border: 5px solid #415e94;
+  border-radius: 10px;
   width: 900px;
   height: 900px;
   position: absolute;
