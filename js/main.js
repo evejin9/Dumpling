@@ -21,6 +21,14 @@ new Swiper('.new-map .swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    100: {
+      slidesPerView: 1,
+    },
+    900: {
+      slidesPerView: 2,
+    },
   }
 });
 
@@ -36,17 +44,31 @@ new Swiper('.best-product .swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    100: {
+      slidesPerView: 1,
+    },
+    900: {
+      slidesPerView: 2,
+    },
   }
 });
 
+// 슬라이드 속 좋아요 버튼
 const favEls = document.querySelectorAll('.favorite .material-icons');
 // const heartIcons = favEls.querySelectorAll('.material-icons')
 
 favEls.forEach(function (favEl, index) {
   favEl.addEventListener('click', function () {
-    favEl.textContent = 'favorite'
+    if (favEl.classList.contains('active')) {
+      favEl.classList.remove('active')
+      favEl.textContent = 'favorite_border'
+    } else {
+      favEl.classList.add('active')
+      favEl.textContent = 'favorite'
+    }
   });
-
 });
 
 
