@@ -11,6 +11,19 @@ btnClose.addEventListener('click', function () {
   mMenu.classList.remove('active');
 });
 
+// 스토어 이미지 슬라이드
+new Swiper('.store-slide .swiper', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 10,
+  centeredSlides: true,
+  navigation: {
+    nextEl: '.store-slide .swiper-button-next',
+    prevEl: '.store-slide .swiper-button-prev',
+  }
+})
+
 // 스크롤 시 보이기
 const toTopEl = document.querySelector('#to-top');
 const favoriteIcon = document.querySelector('#favorite-icon');

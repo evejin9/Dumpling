@@ -10,7 +10,14 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
   <link rel="stylesheet" href="./css/sub.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <script defer src="./js/sub.js"></script>
 </head>
@@ -81,9 +88,112 @@
     </div>
   </header>
 
-  <!--  -->
+  <!-- 섹션 1 검색창 -->
+  <section class="search-view">
+    <div class="inner">
+      <label for="search" class="search-group">
+        <input type="text" id="search" placeholder="지역 및 식당 또는 제품명">
+        <span class="material-icons">search</span>
+      </label>
+    </div>
+  </section>
 
-    <!-- 푸터 -->
+  <!-- 섹션 2 가게 슬라이드 -->
+  <section class="store-slide">
+    <div class="inner">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/store-1.jpg" alt="store-1">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/store-2.jpg" alt="store-2">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/store-3.jpg" alt="store-3">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/store-4.jpg" alt="store-4">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/store-5.jpg" alt="store-5">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/store-6.jpg" alt="store-6">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  
+  <!-- 섹션 3 가게 이름 & 평점  -->
+  <section class="store-header">
+    <div class="inner">
+      <div class="store-title">
+        <h3>신발원</h3>
+        <span>부산 동구</span>
+      </div>
+      <p>부산 차이나타운에서 가장 오랜 역사를 자랑하며, 중소벤처기업부에서 인증한 백년가게에 선정됨</p>
+      <div class="store-score">
+        <span class="material-icons">grade</span>  
+        <span>4.7 / 5</span>
+      </div>
+  
+      <div class="favorite_view">
+        <div class="favorite-score">
+          <span class="material-icons">favorite</span>
+          <span>5010</span>
+        </div>
+        <div class="view-score">
+          <span class="material-icons">visibility</span>
+          <span>11256</span>
+        </div>
+        <div class="comment-number">
+          <span class="material-icons">comment</span>
+          <span>561</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="store-btns">
+      <div class="inner">
+        <div class="favorite_share">
+          <div class="favorite btn">
+            <a href="javascript:void(0)">
+              <span class="material-icons">favorite_border</span>
+              좋아요(176)
+            </a>
+          </div>
+          <div class="share btn">
+            <a href="javascript:void(0)">
+              <span class="material-icons">share</span>
+              공유
+            </a>
+          </div>
+        </div>
+        <div class="favorite_share">
+        </div>
+      </div>
+    </section>
+    <!-- 주소 -->
+  </section>
+
+  <section></section>
+  <!-- 푸터 -->
   <footer>
     <div class="inner">
       <div class="logo">
@@ -133,7 +243,7 @@
         <h2>내가 좋아할 만두</h2>
         <p>당신이 찜한 만두를 여기에 모았습니다. </p>
         <div class="content">
-          <a href="./0_sub/sub.html">
+          <a href="./sub.html">
             <img src="../image/best-1.jpg" alt="new-1">
           </a>
           <span class="title">[부산] 신발원</span>
