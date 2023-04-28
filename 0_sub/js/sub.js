@@ -25,11 +25,9 @@ new Swiper('.store-slide .swiper', {
 })
 
 // 좋아요 버튼 누를 때 
-const storeFvEl = document.querySelector('.store-btns .favorite.btn')
-const fvBtn  = storeFvEl.querySelector('.material-icons')
-const fvNumber = storeFvEl.querySelector('.favorite-number')
-console.log(fvNumber);
-
+const storeFvEl = document.querySelector('.store-btns .favorite.btn');
+const fvBtn  = storeFvEl.querySelector('.material-icons');
+const fvNumber = storeFvEl.querySelector('.favorite-number');
   
   storeFvEl.addEventListener('click', function () {
     if (fvBtn.classList.contains('active')) {
@@ -44,6 +42,26 @@ console.log(fvNumber);
   })
   
   
+// 리뷰 더보기 버튼
+
+const commentMore = document.querySelectorAll('.comments .comment.more');
+const moreEl = document.querySelector('.more-review');
+const moreBtn = moreEl.querySelector('.material-icons');
+
+console.log(commentMore);
+
+
+commentMore.forEach(function (comment, index) {
+  moreEl.addEventListener('click', function () {
+    if (comment.classList.contains('hide')) {
+      comment.classList.remove('hide')
+      moreBtn.textContent = 'arrow_drop_up';
+    } else {
+      comment.classList.add('hide')
+      moreBtn.textContent = 'arrow_drop_down';
+    }
+  })
+})
 
 // 스크롤 시 보이기
 const toTopEl = document.querySelector('#to-top');

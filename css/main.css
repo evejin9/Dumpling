@@ -761,7 +761,7 @@ footer .copyright p {
   }
   
   .new-map .inner {
-    height: 1000px;
+    height: 1035px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -913,4 +913,34 @@ footer .copyright p {
   .favorite-view .favorite-bg .favorite-list {
     justify-content: center;
   }
+}
+@media screen and (max-width: 390px) {
+.dumpling .inner img {
+  width: 390px;
+  height: 280px;
+}
+.search-view .copyright h2 {
+  font-size: 40px;
+}
+.search-view .copyright p {
+  font-size: 20px;
+}
+.search-view label #search-dumpling {
+  width: 370px;
+}
+.best-product .product-review .product-list li {
+  font-size: 13px;
+}
+.delivery .copyright h2 {
+  font-size: 20px;
+}
+.delivery .copyright p {
+  font-size: 16px;
+}
+footer .inner {
+  height: 342px;
+}
+footer .bottom-menu ul li {
+  font-size: 10px;
+}
 }

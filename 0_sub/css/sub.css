@@ -199,6 +199,8 @@ header .m-menu ul li {
   border-top: 1px solid #a3a4a770;
   max-width: 1100px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .store-slide .swiper {
   width: calc(450px * 3 + 10px * 2);
@@ -218,11 +220,22 @@ header .m-menu ul li {
 }
 .store-slide .swiper-button-prev,
 .store-slide .swiper-button-next {
-  color: #4c6eac;
+  /* background-color: #fff; */
+  color: #636363;
   position: absolute;
-  top: 0;
-  width: 50px;
-  height: 322px;
+  top: 20px;
+  width: 60px;
+  height: 302px;
+}
+.store-slide .swiper-button-prev:hover,
+.store-slide .swiper-button-next:hover {
+  color: #5A80C9;
+}
+.store-slide .swiper-button-prev {
+  left: 0;
+}
+.store-slide .swiper-button-next {
+  right: 0;
 }
 
 /* store header */
@@ -365,6 +378,7 @@ header .m-menu ul li {
   align-items: center;
   text-align: center;
   line-height: 2;
+  cursor: pointer;
 }
 .store-menu .menu-group .menu img {
   width: 200px;
@@ -419,7 +433,6 @@ header .m-menu ul li {
   font-size: 16px;
   color: #777777;
 }
-
 .comments .comment .review-score {
   display: flex;
   align-items: center;
@@ -433,13 +446,36 @@ header .m-menu ul li {
 .comments .comment .review img {
   width: 200px;
   padding: 30px 0;
+  cursor: pointer;
 }
 .comments .comment .review p {
   font-size: 20px;
 }
+.comments .comment.hide {
+  display: none;
+}
 
 
-
+/* more-review */
+.more-review .inner {
+  background-color: #f0f0f09a;
+  border-bottom: 1px solid #a3a4a770;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.more-review .more {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more-review .more .material-icons {
+  padding: 0 10px;
+  font-size: 25px;
+}
 
 
 
