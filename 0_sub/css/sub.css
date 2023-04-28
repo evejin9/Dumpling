@@ -345,10 +345,10 @@ header .m-menu ul li {
 /* store-menu */
 .store-menu .inner {
   border-top: 1px solid #a3a4a770;
-  padding: 20px;
+  padding: 40px;
 }
 .store-menu h3 {
-  padding: 0 20px 20px;
+  padding: 0 20px 40px;
 }
 .store-menu .menu-group {
   padding: 0 20px 0;
@@ -381,9 +381,62 @@ header .m-menu ul li {
 }
 
 
+/* comments */
+.comments .inner {
+  border-top: 1px solid #a3a4a770;
+  border-bottom: 1px solid #a3a4a770;
+  box-sizing: border-box;
+}
+.comments h3 {
+  padding: 10px 0 60px;
+}
+.comments .comment {
+  border-top: 1px solid #a3a4a770;
+  padding: 30px 30px;
+}
+.comments .comment:first-child {
+  border-top: none;
+}
+.comments .comment .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.comments .comment .user .id {
+  display: flex;
+  align-items: center;
+}
+.comments .comment .user .id .material-icons {
+  padding-right: 5px;
+  font-size: 40px;
+}
+.comments .comment .user .id .user-id {
+  font-size: 18px;
+  font-weight: 500;
+}
+.comments .comment .user .day {
+  font-size: 16px;
+  color: #777777;
+}
 
-
-
+.comments .comment .review-score {
+  display: flex;
+  align-items: center;
+  color: #e03939;
+}
+.comments .comment .review {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.comments .comment .review img {
+  width: 200px;
+  padding: 30px 0;
+}
+.comments .comment .review p {
+  font-size: 20px;
+}
 
 
 
