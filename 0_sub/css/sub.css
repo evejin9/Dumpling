@@ -21,20 +21,16 @@ a {
 .btn {
   background-color: #5A80C9;
   color: #fff;
-  border: 3px solid #fff;
+  border: 3px solid transparent;
   font-size: 15px;
   padding: 15px 30px;
-  border-radius: 25px;
+  border-radius: 30px;
   margin: 5px;
 }
 .btn:hover {
   background-color: #fff;
   color: #5A80C9;
   border: 3px solid #5A80C9;
-  font-size: 15px;
-  padding: 15px 30px;
-  border-radius: 25px;
-  margin: 5px;
 }
 
 h3 {
@@ -264,7 +260,7 @@ header .m-menu ul li {
 .store-header .favorite_view {
   display: flex;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   right: 0;
   margin-bottom: 10px;
 }
@@ -288,6 +284,34 @@ header .m-menu ul li {
   padding-right: 10px;
 }
 
+/* store-btn */
+.store-btns .inner {
+  border-top: 1px solid #a3a4a770;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.store-btns .favorite_share {
+  display: flex;
+}
+.store-btns .btn {
+  cursor: pointer;
+}
+.store-btns .btn a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.store-btns .btn:hover a {
+  color: #415e94;
+}
+.store-btns .btn a .material-icons {
+  padding-right: 6px;
+}
+.store-btns .favorite.btn a .material-icons {
+  color: #FF0000;
+}
 
 
 /* footer */
@@ -462,6 +486,7 @@ footer .copyright p {
 .favorite-view .favorite-bg .favorite-list .content:hover span {
   color: #5A80C9;
 }
+
 
 @media screen and (max-width: 1060px) {
   header .inner {

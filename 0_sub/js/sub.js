@@ -24,6 +24,27 @@ new Swiper('.store-slide .swiper', {
   }
 })
 
+// 좋아요 버튼 누를 때 
+const storeFvEl = document.querySelector('.store-btns .favorite.btn')
+const fvBtn  = storeFvEl.querySelector('.material-icons')
+const fvNumber = storeFvEl.querySelector('.favorite-number')
+console.log(fvNumber);
+
+  
+  storeFvEl.addEventListener('click', function () {
+    if (fvBtn.classList.contains('active')) {
+      fvBtn.classList.remove('active');
+      fvBtn.textContent = 'favorite_border';
+      fvNumber.textContent = '좋아요(176)'
+    } else {
+      fvBtn.classList.add('active');
+      fvBtn.textContent = 'favorite';
+      fvNumber.textContent = '좋아요(177)'
+    }
+  })
+  
+  
+
 // 스크롤 시 보이기
 const toTopEl = document.querySelector('#to-top');
 const favoriteIcon = document.querySelector('#favorite-icon');
