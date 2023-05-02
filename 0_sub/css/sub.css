@@ -259,6 +259,7 @@ header .m-menu ul li {
 .store-header p {
   padding-bottom: 20px;
   font-size: 15px;
+  text-align: center;
 }
 .store-header .store-score {
   display: flex;
@@ -364,7 +365,6 @@ header .m-menu ul li {
   padding: 0 20px 40px;
 }
 .store-menu .menu-group {
-  padding: 0 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -666,4 +666,127 @@ footer .copyright p {
   header .btn-hamburger {
     display: block;
     }
+
+  .favorite-view .favorite-bg {
+    width: 650px;
+    height: 750px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .search-view .search-group #search {
+    width: 390px;
+  }
+
+  .store-btns .btn {
+    padding: 10px 20px;
+  }
+  .store-info .info {
+    font-size: 15px;
+  }
+
+  .store-menu .menu-group .menu img {
+    width: 137px;
+  }
+  .store-menu .menu-group .menu .menu-info h4 {
+    font-size: 14px;
+  }
+  .store-menu .menu-group .menu .menu-info p {
+    font-size: 12px;
+  }
+
+  .comments h3 {
+    font-size: 20px;
+  }
+
+  .favorite-view .favorite-bg {
+    width: 460px;
+    height: 715px;
+    overflow: auto;
+  }
+  .favorite-view .favorite-bg .favorite-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .search-view .search-group #search {
+    width: 280px;
+  }
+
+  .store-header p {
+    padding: 0 10px 16px;
+    font-size: 15px;
+  }
+  .store-header .store-score {
+    padding-bottom: 50px;
+  }
+  .store-header .store-score .material-icons {
+    font-size: 19px;
+  }
+  .store-header .store-score span:last-child {
+    font-size: 15px;
+  }
+
+  .store-btns .btn {
+    padding: 5px 13px;
+  }
+  .store-btns .btn a {
+    font-size: 10px;
+  }
+  .store-btns .btn a .material-icons {
+    font-size: 15px;
+  }
+
+  .store-info .info {
+    font-size: 13.5px;
+    line-height: 2.4;
+  }
+
+  .store-menu h3 {
+    font-size: 24px;
+  }
+  .store-menu .menu-group .menu img {
+    width: 123px;
+  }
+  .store-menu .menu-group .menu .menu-info h4 {
+    font-size: 12px;
+  }
+  .store-menu .menu-group .menu .menu-info p {
+    font-size: 10px;
+  }
+
+  .comments .comment .user .id .material-icons {
+    font-size: 32px;
+  }
+  .comments .comment .user .id .user-id {
+    font-size: 15px;
+  }
+  .comments .comment .user .day {
+    font-size: 12px;
+  }
+  .comments .comment .review p {
+    font-size: 15px;
+  }
+
+  .favorite-view .favorite-bg {
+    width: 320px;
+  }
+  .favorite-view .favorite-bg .favorite-list h2 {
+    font-size: 30px;
+  }
+  .favorite-view .favorite-bg .favorite-list p {
+    font-size: 14px;
+  }
+  .favorite-view .favorite-bg .favorite-list .content img {
+    width: 200px;
+    height: 150px;
+  }
+  
+  footer .inner {
+    height: 342px;
+  }
+  footer .bottom-menu ul li {
+    font-size: 10px;
+  }
 }

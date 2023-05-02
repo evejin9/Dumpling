@@ -937,6 +937,21 @@ footer .copyright p {
 .delivery .copyright p {
   font-size: 16px;
 }
+
+.favorite-view .favorite-bg {
+  width: 320px;
+}
+.favorite-view .favorite-bg .favorite-list h2 {
+  font-size: 30px;
+}
+.favorite-view .favorite-bg .favorite-list p {
+  font-size: 14px;
+}
+.favorite-view .favorite-bg .favorite-list .content img {
+  width: 200px;
+  height: 150px;
+}
+
 footer .inner {
   height: 342px;
 }
