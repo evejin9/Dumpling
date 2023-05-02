@@ -40,6 +40,19 @@ const fvNumber = storeFvEl.querySelector('.favorite-number');
       fvNumber.textContent = '좋아요(177)'
     }
   })
+
+// 공유 모달창
+const storeShareEl  = document.querySelector('.store-btns .share.btn');
+const shareModal  = document.querySelector('#share-modal');
+const shareClose = shareModal.querySelector('.share-modal_bg .btn-close');
+
+storeShareEl.addEventListener('click', function () {
+  shareModal.classList.add('active');
+});
+
+shareClose.addEventListener('click', function () {
+  shareModal.classList.remove('active');
+});
   
   
 // 리뷰 더보기 버튼
