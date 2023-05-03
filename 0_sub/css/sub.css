@@ -509,6 +509,7 @@ header .m-menu ul li {
 }
 .comments .comment .review p {
   font-size: 20px;
+  line-height: 1.8;
 }
 .comments .comment.hide {
   display: none;
